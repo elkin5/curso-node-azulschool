@@ -20,9 +20,9 @@
 const consultaDb = new Promise((resolve, reject) => {
 
   const peliculas = [
-    {name:'buscando a nemo'},
-    {name:'buscando a nemo 2'},
-    {name:'buscando a nemo 3'}
+    {name: 'buscando a nemo'},
+    {name: 'buscando a nemo 2'},
+    {name: 'buscando a nemo 3'}
   ]
 
   setTimeout(() => {
@@ -35,13 +35,13 @@ const consultaDb = new Promise((resolve, reject) => {
 })
 
 
-async function consultandoALaBaseDeDatos(){
-  try{
+async function consultandoALaBaseDeDatos() {
+  try {
     let result = await consultaDb
     result.forEach(e => {
       console.log(e.name)
     })
-  }catch(err){
+  } catch (err) {
     console.log(err)
   }
 }
