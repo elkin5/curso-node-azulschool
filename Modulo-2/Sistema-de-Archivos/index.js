@@ -1,6 +1,7 @@
+// Node trae modulos para el manejo del sistema operativo y tiene mas modulos que pueden ser usados
 const os = require ('os')
 const fs = require ('fs')
-const {suma,resta}= require('../Modulos/index')
+const {suma,resta}= require('../Modulos/calc')
 // let usuario = (os.userInfo().username)
 
 // if(usuario==='daniel'){
@@ -41,5 +42,7 @@ const {suma,resta}= require('../Modulos/index')
 //   if(err)throw err
 //   console.log(contenido)
 // })
+
+// Manejar errores de manera sincrona con try y catch  y de de manera asicrona con clallback
 
 console.log(fs.readFileSync('./npm-debug.log','utf-8'))
