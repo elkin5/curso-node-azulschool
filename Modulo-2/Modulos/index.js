@@ -1,15 +1,9 @@
-const is = require ('is-thirteen')
+// Para instalar dependencias ya no es necesario escribir istall --save
+// lo hace por defecto
+// para instalar una dependencia de desarrollo lo instalamos global -g
+// Con nodemon podemos actualizar cambios sin necesidad de reiniciar el servidor
 
-const suma =(n1,n2)=>n1+n2
-const resta =(n1,n2)=>n1-n2
-const div =(n1,n2)=>n1/n2
-const mult =(n1,n2)=>n1*n2
+// Aqui se realiza un import de un modulo instalado
+const is = require('is-thirteen')
 
-module.exports= {
-
-  suma,
-  resta,
-  div,
-  mult
-
-}
+console.log(is(13))
