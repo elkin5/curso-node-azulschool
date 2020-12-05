@@ -1,5 +1,8 @@
+// Es una forma mas facil de manejar streams
+
 const {Duplex,Transform}= require('stream')
 
+// Editar el constructor de la clase (manera dificil)
 // const duplexStream = new Duplex ({
 //   write(pedacitos,encoding,callback){
 //     console.log(pedacitos.toString())
@@ -16,6 +19,7 @@ const {Duplex,Transform}= require('stream')
 
 // })
 
+// doy valor a caracter mediante una instancia
 // duplexStream.caracter=65
 // process.stdin.pipe(duplexStream).pipe(process.stdout)
 

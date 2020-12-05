@@ -40,6 +40,7 @@ const server = require('http').createServer()
 
 //Servidor con streams
 
+// Envio de stream desde servidor
 server.on('request', (req, res) => {
   const archivo = fs.createReadStream('./archivoMamalon.txt','utf-8')
   archivo.pipe(res);
