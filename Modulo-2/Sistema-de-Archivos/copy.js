@@ -51,6 +51,8 @@ las dos patitas de atrás.`
 //   console.log('Archivo copiado corrrectamente')
 // })
 
+// se pueden manaejar de forma sicrona y asicrona
+// Crear carpeta dentor de otra carpeta
 fs.mkdir('files2/carpeta1',{recursive:true},(err)=>{
   if(err) console.log(err)
 })
